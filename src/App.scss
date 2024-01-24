@@ -1,0 +1,27 @@
+@import "./styles/mixins";
+@import "./styles/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    font-family: $font-comfortaa;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: darkorange;
+    transform-origin: 0%;
+    z-index: 999;
+}

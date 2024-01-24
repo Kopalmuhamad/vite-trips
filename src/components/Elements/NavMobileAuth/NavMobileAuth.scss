@@ -1,0 +1,57 @@
+@import "../../../styles/variables";
+
+.mobile-auth-container {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: $accent;
+
+    .mobile-auth-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem 0;
+        padding-left: 1rem;
+
+        .mobile-auth-title {
+            font-size: 32px;
+            color: $text-white;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .mobile-auth-button-list-wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            gap: .6rem 0;
+
+            .mobile-auth-button-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: .4rem;
+                font-size: 12px;
+                padding: 1rem;
+                border-radius: 8px;
+                text-align: start;
+                border: 2px solid $text-white;
+                color: $text-white;
+            }
+        }
+
+        .mobile-auth-description {
+            font-size: 12px;
+            color: $text-white;
+            opacity: 0.75;
+            font-weight: 500;
+            text-align: start;
+        }
+    }
+}

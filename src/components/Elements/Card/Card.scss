@@ -1,0 +1,112 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+@include mobile {
+    .cards {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 3rem 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 6px #222;
+
+        .card-side-left {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .card-side-right {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            padding: .5rem .5rem .5rem 1rem;
+            gap: .4rem 0;
+        }
+    }
+}
+
+@include tablet {
+    .cards {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 6px #222;
+
+        .card-side-left {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .card-side-right {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            padding: .5rem .5rem .5rem 1rem;
+            gap: .4rem;
+        }
+    }
+}
+
+@include laptop {
+    .cards {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 6px #222;
+
+        .card-side-left {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .card-side-right {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            padding: .5rem .5rem .5rem 1rem;
+        }
+    }
+}
+
+@include desktop {
+    .cards {
+        width: 100%;
+        max-width: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 6px #222;
+
+        .card-side-left {
+            width: 100%;
+        }
+
+
+        .card-side-right {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            padding: .5rem .5rem .5rem 1rem;
+        }
+    }
+}

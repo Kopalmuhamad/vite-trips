@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+
+.button {
+    padding: .8rem;
+    border-radius: 6px;
+    border: 2px solid darkorange;
+    color: $text-black;
+    font-weight: 800;
+    font-size: 14px;
+    transition: 200ms all ease-in-out;
+    cursor: pointer;
+    text-shadow: 0 0 5px $shadow-light;
+
+    &:is(:hover, :active) {
+        background-color: darkorange;
+    }
+
+    &.primary {
+        background-color: darkorange;
+        transition: 200ms all ease-in-out;
+
+
+        &:is(:hover, :active) {
+            background-color: transparent;
+        }
+    }
+}

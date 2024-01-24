@@ -1,0 +1,42 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.product-container {
+    width: 100%;
+    margin: 0 0 4rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #eaeaea;
+    position: relative;
+
+    @include mobile {
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @include tablet {
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+    }
+
+    @include laptop {
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+    }
+
+    @include desktop {
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+    }
+}

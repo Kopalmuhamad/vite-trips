@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+.section-title-container {
+    width: 100%;
+    padding: 3rem 0 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .section-title {
+        color: #222;
+        font-size: $text-2xl;
+    }
+
+    .shadow-section-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        font-size: $text-3xl;
+        text-shadow: 0 0 4px #222;
+        opacity: .2;
+    }
+}

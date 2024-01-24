@@ -1,0 +1,17 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.layout {
+    position: relative;
+    width: 100%;
+
+    .layout-container {
+        width: 95%;
+        margin: 0 auto;
+
+        &.fluid {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
