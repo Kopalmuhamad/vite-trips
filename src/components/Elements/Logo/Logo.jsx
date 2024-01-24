@@ -2,11 +2,14 @@ import React from "react";
 // ! Import Styling
 import "./Logo.scss";
 
+// ! Import utils
+import { Link } from "react-router-dom";
+
 const Logo = () => {
   return (
-    <a href="#" className="nav-logo">
+    <Link to={"/"} className="nav-logo">
       Vite<span>.</span>Trip
-    </a>
+    </Link>
   );
 };
 

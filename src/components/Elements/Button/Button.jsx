@@ -1,14 +1,12 @@
 import React from "react";
 import "./Button.scss";
+import { Link } from "react-router-dom";
 
-const Button = ({ href, variant, children, classname }) => {
+const Button = ({ to, variant, children, classname }) => {
   return (
-    <a
-      href={href}
-      className={`button ${variant ? "primary" : ""} ${classname}`}
-    >
+    <Link to={to} className={`button ${variant ? "primary" : ""} ${classname}`}>
       {children}
-    </a>
+    </Link>
   );
 };
 

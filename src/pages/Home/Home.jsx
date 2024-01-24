@@ -7,7 +7,7 @@ import RecommendedAccomodation from "../../components/Fragments/ReccomendedAccom
 const Home = () => {
   return (
     <>
-      <main className="home">
+      <main className="home" id="home">
         <Hero />
         <Product />
         <RecommendedAccomodation />

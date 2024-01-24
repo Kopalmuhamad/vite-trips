@@ -12,7 +12,7 @@ const Product = () => {
   return (
     <Layout>
       <SectionTitle title={"Our Trips"} />
-      <div className="product-container">
+      <div className="product-container" id="product">
         <div className="card-container">
           <Card data={product} />
         </div>

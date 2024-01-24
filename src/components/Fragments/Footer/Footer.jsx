@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,42 +8,62 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-container">
           <div className="social-media-wrapper">
-            <a href="#" className="social-media-icon">
+            <Link
+              to={"/https://www.instagram.com/kopalllmuhamad"}
+              href="#"
+              className="social-media-icon"
+            >
               <i className="uil uil-instagram-alt"></i>
-            </a>
-            <a href="#" className="social-media-icon">
+            </Link>
+            <Link
+              to={"/https://www.facebook.com/kopalmuhamad"}
+              href="#"
+              className="social-media-icon"
+            >
               <i className="uil uil-facebook"></i>
-            </a>
-            <a href="#" className="social-media-icon">
+            </Link>
+            <Link
+              to={"/https://wa.me/+62895620140500"}
+              href="#"
+              className="social-media-icon"
+            >
               <i className="uil uil-whatsapp-alt"></i>
-            </a>
-            <a href="#" className="social-media-icon">
+            </Link>
+            <Link
+              to={"/https://github.com/Kopalmuhamad"}
+              href="#"
+              className="social-media-icon"
+            >
               <i className="uil uil-github"></i>
-            </a>
-            <a href="#" className="social-media-icon">
+            </Link>
+            <Link
+              onClick={() => alert("callme on 0895620140500")}
+              href="#"
+              className="social-media-icon"
+            >
               <i className="uil uil-phone"></i>
-            </a>
+            </Link>
           </div>
           <ul className="footer-menu-list-wrapper">
             <li className="footer-menu-list-item">
-              <a href="" className="footer-menu-link">
+              <Link to={"/"} href="" className="footer-menu-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="footer-menu-list-item">
-              <a href="" className="footer-menu-link">
+              <Link to={"/aboutUs"} href="" className="footer-menu-link">
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="footer-menu-list-item">
-              <a href="" className="footer-menu-link">
+              <Link to={"#testimoni"} href="" className="footer-menu-link">
                 Testimoni
-              </a>
+              </Link>
             </li>
             <li className="footer-menu-list-item">
-              <a href="" className="footer-menu-link">
+              <Link to={"#contact"} href="" className="footer-menu-link">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="copyright-text">© Copyright Allright Reserved</div>

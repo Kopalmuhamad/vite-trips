@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavMobileMenuList.scss";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const NavMobileMenuList = () => {
   const slideToTop = {
@@ -20,24 +21,24 @@ const NavMobileMenuList = () => {
       >
         <ul className="mobile-menu-list-wrapper">
           <li className="mobile-menu-list-item">
-            <a href="#" className="mobile-menu-link">
+            <Link to={"/"} className="mobile-menu-link">
               Home
-            </a>
+            </Link>
           </li>
           <li className="mobile-menu-list-item">
-            <a href="#" className="mobile-menu-link">
+            <Link to={"/aboutUs"} className="mobile-menu-link">
               About Us
-            </a>
+            </Link>
           </li>
           <li className="mobile-menu-list-item">
-            <a href="#" className="mobile-menu-link">
+            <Link to={"#testimoni"} className="mobile-menu-link">
               Testimoni
-            </a>
+            </Link>
           </li>
           <li className="mobile-menu-list-item">
-            <a href="#" className="mobile-menu-link">
+            <Link to={"#contact"} className="mobile-menu-link">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </motion.nav>

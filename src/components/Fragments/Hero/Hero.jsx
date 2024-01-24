@@ -16,7 +16,11 @@ const Hero = () => {
           <h3 className="hero-header-subtitle">
             Perjalanan Anda Dimulai Dari Sini
           </h3>
-          <Button classname={"hero-header-button"} variant={"primary"}>
+          <Button
+            to={"/booking"}
+            classname={"hero-header-button"}
+            variant={"primary"}
+          >
             Booking Now
           </Button>
         </div>

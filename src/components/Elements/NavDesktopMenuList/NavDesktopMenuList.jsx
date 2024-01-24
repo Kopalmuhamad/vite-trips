@@ -1,29 +1,30 @@
 import React from "react";
 import "./NavDesktopMenuList.scss";
+import { Link } from "react-router-dom";
 
 const NavDesktopMenuList = () => {
   return (
     <nav className="desktop-menu-list-container">
       <ul className="desktop-menu-list-wrapper">
         <li className="desktop-menu-list-item">
-          <a href="#" className="desktop-menu-link">
+          <Link to={"/"} className="desktop-menu-link">
             Home
-          </a>
+          </Link>
         </li>
         <li className="desktop-menu-list-item">
-          <a href="#" className="desktop-menu-link">
+          <Link to={"/aboutUs"} className="desktop-menu-link">
             About Us
-          </a>
+          </Link>
         </li>
         <li className="desktop-menu-list-item">
-          <a href="#" className="desktop-menu-link">
+          <Link to={"#testimoni"} className="desktop-menu-link">
             Testimoni
-          </a>
+          </Link>
         </li>
         <li className="desktop-menu-list-item">
-          <a href="#" className="desktop-menu-link">
+          <Link to={"#contact"} className="desktop-menu-link">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

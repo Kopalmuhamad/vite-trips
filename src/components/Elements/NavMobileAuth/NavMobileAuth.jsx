@@ -7,6 +7,7 @@ import GoogleIcon from "../../../assets/icons/GoogleIcon";
 import FacebookIcon from "../../../assets/icons/FacebookIcon";
 import EmailIcon from "../../../assets/icons/EmailIcon";
 import TelephoneIcon from "../../../assets/icons/TelephoneIcon";
+import { Link } from "react-router-dom";
 
 const NavMobileAuth = () => {
   const slideFromLeft = {
@@ -31,19 +32,27 @@ const NavMobileAuth = () => {
             </h1>
             <ul className="mobile-auth-button-list-wrapper">
               <li className="mobile-auth-button-item">
-                <GoogleIcon />
-                Lanjutkan Dengan Google
+                <Link to={"/"}>
+                  <GoogleIcon />
+                  Lanjutkan Dengan Google
+                </Link>
               </li>
               <li className="mobile-auth-button-item">
-                <FacebookIcon /> Lanjutkan Dengan Facebook
+                <Link to={"/"}>
+                  <FacebookIcon /> Lanjutkan Dengan Facebook
+                </Link>
               </li>
               <li className="mobile-auth-button-item">
-                <EmailIcon />
-                Lanjutkan Dengan Email
+                <Link to={"/"}>
+                  <EmailIcon />
+                  Lanjutkan Dengan Email
+                </Link>
               </li>
               <li className="mobile-auth-button-item">
-                <TelephoneIcon />
-                Lanjutkan Dengan No. Telephone
+                <Link to={"/"}>
+                  <TelephoneIcon />
+                  Lanjutkan Dengan No. Telephone
+                </Link>
               </li>
             </ul>
             <div className="mobile-auth-description">
