@@ -32,24 +32,24 @@ const NavMobileAuth = () => {
             </h1>
             <ul className="mobile-auth-button-list-wrapper">
               <li className="mobile-auth-button-item">
-                <Link to={"/"}>
+                <Link to={"/"} className="button-auth">
                   <GoogleIcon />
                   Lanjutkan Dengan Google
                 </Link>
               </li>
               <li className="mobile-auth-button-item">
-                <Link to={"/"}>
+                <Link to={"/"} className="button-auth">
                   <FacebookIcon /> Lanjutkan Dengan Facebook
                 </Link>
               </li>
               <li className="mobile-auth-button-item">
-                <Link to={"/"}>
+                <Link to={"/"} className="button-auth">
                   <EmailIcon />
                   Lanjutkan Dengan Email
                 </Link>
               </li>
               <li className="mobile-auth-button-item">
-                <Link to={"/"}>
+                <Link to={"/"} className="button-auth">
                   <TelephoneIcon />
                   Lanjutkan Dengan No. Telephone
                 </Link>

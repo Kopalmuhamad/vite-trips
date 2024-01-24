@@ -33,16 +33,20 @@
             gap: .6rem 0;
 
             .mobile-auth-button-item {
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 gap: .4rem;
                 font-size: 12px;
                 padding: 1rem;
                 border-radius: 8px;
                 text-align: start;
                 border: 2px solid $text-white;
-                color: $text-white;
+
+                .button-auth {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0 .8rem;
+                    color: $text-white;
+                }
             }
         }
 
