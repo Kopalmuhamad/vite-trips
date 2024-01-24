@@ -11,6 +11,9 @@ import Home from "./pages/Home/Home";
 
 // ? Framer Motion
 import { motion, useScroll } from "framer-motion";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import Booking from "./pages/Booking/Booking";
+import ProductDetail from "./pages/ProductDetail/ProductDetail";
 
 function App() {
   // ToDo Scrollbar Progress
@@ -26,79 +29,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route index exact path="/" element={<Home />} />
-          <Route
-            path="/productDetail"
-            element={
-              <div
-                style={{
-                  width: "100%",
-                  height: "100vh",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <h1>Product Detail</h1>
-                <p>
-                  This Page Still Develop. Please wait For Update, thank you for
-                  visiting
-                </p>
-                <Link to={"/"}>Back To Home</Link>
-                <Link to={"https://linkedin.com/in/muhamad-kopal"}></Link>
-              </div>
-            }
-          />
-          <Route
-            path="/booking"
-            element={
-              <div
-                style={{
-                  width: "100%",
-                  height: "100vh",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <h1>Booking</h1>
-                <p>
-                  This Page Still Develop. Please wait For Update, thank you for
-                  visiting
-                </p>
-                <Link to={"/"}>Back To Home</Link>
-                <Link to={"https://linkedin.com/in/muhamad-kopal"}>
-                  Go to my Linked In
-                </Link>
-              </div>
-            }
-          />
-          <Route
-            path="/aboutUs"
-            element={
-              <div
-                style={{
-                  width: "100%",
-                  height: "100vh",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <h1>About Us</h1>
-                <p>
-                  This Page Still Develop. Please wait For Update, thank you for
-                  visiting
-                </p>
-                <Link to={"/"}>Back To Home</Link>
-                <Link to={"https://linkedin.com/in/muhamad-kopal"}>
-                  Go to my Linked In
-                </Link>
-              </div>
-            }
-          />
+          <Route path="/productDetail" element={<ProductDetail />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>
         <Footer />
       </Router>

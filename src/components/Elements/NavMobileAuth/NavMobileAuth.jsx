@@ -31,29 +31,21 @@ const NavMobileAuth = () => {
               Vite<span>.</span>Trip
             </h1>
             <ul className="mobile-auth-button-list-wrapper">
-              <li className="mobile-auth-button-item">
-                <Link to={"/"} className="button-auth">
-                  <GoogleIcon />
-                  Lanjutkan Dengan Google
-                </Link>
-              </li>
-              <li className="mobile-auth-button-item">
-                <Link to={"/"} className="button-auth">
-                  <FacebookIcon /> Lanjutkan Dengan Facebook
-                </Link>
-              </li>
-              <li className="mobile-auth-button-item">
-                <Link to={"/"} className="button-auth">
-                  <EmailIcon />
-                  Lanjutkan Dengan Email
-                </Link>
-              </li>
-              <li className="mobile-auth-button-item">
-                <Link to={"/"} className="button-auth">
-                  <TelephoneIcon />
-                  Lanjutkan Dengan No. Telephone
-                </Link>
-              </li>
+              <Link to={"/"} className="mobile-auth-button-item">
+                <GoogleIcon />
+                Lanjutkan Dengan Google
+              </Link>
+              <Link to={"/"} className="mobile-auth-button-item">
+                <FacebookIcon /> Lanjutkan Dengan Facebook
+              </Link>
+              <Link to={"/"} className="mobile-auth-button-item">
+                <EmailIcon />
+                Lanjutkan Dengan Email
+              </Link>
+              <Link to={"/"} className="mobile-auth-button-item">
+                <TelephoneIcon />
+                Lanjutkan Dengan No. Telephone
+              </Link>
             </ul>
             <div className="mobile-auth-description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
